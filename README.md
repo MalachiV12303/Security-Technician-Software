@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Assignment from Advanced Software Programming (COP4504)
+This course covers advanced concepts of computer programming including object-oriented programming, procedural and data implementation and program modularity. This is an advanced level programming course and it is recommended that students have completed a lower level programming language.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Proposal/First Stages
+- I will create an application that will assist employees of my company by automating a specific process.  The “process” is calculating prices for three different security equipment options. Currently employees write out this math by hand, remember numbers such as points available, and organize all this information together.  The software being created will automatically add points, all pieces of equipment, activation fees, tax, vouchers and return with totals.  It will also temporarily store the three separate package options.
 
-## Available Scripts
+![aaaaa](https://github.com/user-attachments/assets/18b98890-2397-4eca-a71c-1b85913b15e0)
 
-In the project directory, you can run:
+![bbb](https://github.com/user-attachments/assets/c91f010d-3f7d-4a91-8d38-fb32044f4f8e)
 
-### `npm start`
+## Feature One Update
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![progress ss](https://github.com/user-attachments/assets/76a52004-7748-4a46-9e57-8bf67c2b7fed)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For the feature one update, I implemented adding equipment to a package.  This involved creating package objects, as well as creating reusable objects for each piece of equipment.  Each piece of equipment is learned in through JSX code, 
+```
+import { menuData } from './utils/MenuData.js';
 
-### `npm test`
+menuData.map(({ title, content }) => (
+  <ExpandableMenu title={title} content={content} />
+);
+```
+menuData is a file consisting of an array full of each equipment name, cost, chime types, par pricing, and point values.  I have also added package objects, these consist of lists of equipment objects, and methods that affect the package, and check methods to check for better saving opportunities.  I was unable to display this information, but I have the groundwork for the project implemented.  Before the next update, I plan on adding package history, viewing, and inventory viewing.  After that, I plan on improving the styling of the project, but I prefer to do CSS styling once all functionality has been implemented.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Feature Two Update
 
-### `npm run build`
+For the Feature Two Update/Release, first I implemented the view personal inventory function.  It will read a file containing a user’s personal inventory and will display the results.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2024-05-06 220704](https://github.com/user-attachments/assets/76cc7d1e-f3ef-45f2-b908-e1151d0df151)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Next, I implemented the view package history function, here a package created can be viewed and it utilizes a package file to determine cost, point value, quantity, and name of the item.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2024-05-06 220737](https://github.com/user-attachments/assets/d48a1799-6f7a-430b-92e5-6d99e1144a1d)
+![Screenshot 2024-05-06 220752](https://github.com/user-attachments/assets/e77e8a94-c92f-47f1-b646-e28e8cacda6f)
 
-### `npm run eject`
+Lastly, I improved the CSS to make the application more visually appealing and intuitive.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2024-05-06 220639](https://github.com/user-attachments/assets/2d81193b-fc82-4ea0-852b-b6fbfe32205e)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I was unable to to include an algorithm that searches for potential savings, as well as the ability to add three separate packages.  Overall, I think the project achieved my original goal, and it will reduce the time it takes to create package options.
