@@ -1,0 +1,29 @@
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+ul li{
+    font-size: 16px;
+}
+
+#header-logo {
+    height:40px;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.App-header {
+    background-color: var(--dark-color);
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 1rem;
+}

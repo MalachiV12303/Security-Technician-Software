@@ -1,0 +1,12 @@
+.footer-container{
+    padding: 2rem 10rem;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#description{
+    margin-right: auto;
+}
