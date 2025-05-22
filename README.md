@@ -1,5 +1,5 @@
 # Assignment from Advanced Software Programming (COP4504) 2024
-This course covers advanced concepts of computer programming including object-oriented programming, procedural and data implementation and program modularity. This is an advanced level programming course and it is recommended that students have completed a lower level programming language.
+This course covers advanced concepts of computer programming including object-oriented programming, procedural and data implementation and program modularity. This is an advanced level programming course and it is recommended that students have completed a lower level programming language. 
 
 ## Project Proposal/First Stages
 - I will create an application that will assist employees of my company by automating a specific process.  The “process” is calculating prices for three different security equipment options. Currently employees write out this math by hand, remember numbers such as points available, and organize all this information together.  The software being created will automatically add points, all pieces of equipment, activation fees, tax, vouchers and return with totals.  It will also temporarily store the three separate package options.
